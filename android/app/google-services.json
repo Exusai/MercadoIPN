@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "19078403648",
+    "firebase_url": "https://mercado-ipn.firebaseio.com",
+    "project_id": "mercado-ipn",
+    "storage_bucket": "mercado-ipn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19078403648:android:f6226fa170ffe8234331a5",
+        "android_client_info": {
+          "package_name": "com.exu.mercado_ipn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19078403648-p1jovb59j4mtmqgl7t1fan9gih8kh0pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfTrd8V7Wvm0i4gMWdUviV1Kt-gjc0iLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19078403648-p1jovb59j4mtmqgl7t1fan9gih8kh0pl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "19078403648-iea48ccpikmrtn6gu5edvoghv3po29ik.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.exu.mercadoIpn"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
