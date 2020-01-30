@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
             //       },
             //       ),
             FlatButton.icon(
-              icon: Icon(Icons.notifications, color: Colors.redAccent),
+              icon: Icon(Icons.shop_two, color: Colors.white),
               label: Text(''),
               onPressed: () {
                 Navigator.push(

@@ -6,7 +6,6 @@ import 'package:mercado_ipn/models/user.dart';
 //import 'package:mercado_ipn/screens/tasks/view_task_pedido.dart';
 import 'package:mercado_ipn/services/database.dart';
 import 'package:provider/provider.dart';
-
 import 'listas.dart';
 
 class TaskStatus extends StatelessWidget {
@@ -26,6 +25,7 @@ class TaskStatus extends StatelessWidget {
                 elevation: 0.0,
               ),
               body: ListaPedidos()
+              
             ),
           );
   }
