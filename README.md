@@ -1,7 +1,3 @@
-## Mercado IPN
-
-Aplicación desarrollada para comprar y vender distintos productos.
-
 ## Compatibilidad
 
 Debería funcionar con (casi) todos los dispositivos android
