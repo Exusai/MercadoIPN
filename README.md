@@ -1,5 +1,7 @@
 ## Compatibilidad
 
+Android & IOS (parcialmente)
+
 Debería funcionar con (casi) todos los dispositivos android
 a pesar de que fue desarrollada (bueno, probadadurante el desarrollo) en un Iphone, aún no encuentro como distrubuila fuera de la appstore... quizás sea posible...
 
