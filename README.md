@@ -7,7 +7,7 @@ a pesar de que fue desarrollada (bueno, probadadurante el desarrollo) en un Ipho
 
 ## Descargar
 
-Puedes descargar la app siguiendo el link: [ DESCARGAR ](https://github.com/Exusai/MercadoIPN/blob/Proyecto/MercadoIPN(Beta2).apk?raw=true)
+Puedes descargar la app siguiendo el link: [ DESCARGAR ](https://github.com/Exusai/MercadoIPN/blob/Proyecto/MercadoIPN(Beta2.1).apk?raw=true)
 
 ## Actualizar
 Si estas aqui por la nueva versión... sugiero borrar el app que ya esta instalada y despues instalar el apk del link de arriba
