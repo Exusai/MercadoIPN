@@ -17,5 +17,5 @@ Puedes descargar la app siguiendo el link: [ DESCARGAR ](https://github.com/Exus
 Si estas aqui por la nueva versión... sugiero borrar el app que ya esta instalada y despues instalar el apk del link de arriba
 
 ## Test (?)
-![Test:](https://github.com/Exusai/MercadoIPN/blob/master/Teaser-M-IPN.gif)
+![alt-text](https://github.com/Exusai/MercadoIPN/blob/master/Teaser-M-IPN.gif)
 
