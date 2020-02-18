@@ -18,4 +18,4 @@ Si estas aqui por la nueva versión... sugiero borrar el app que ya esta instala
 
 ## Test (?)
 ![alt-text](https://github.com/Exusai/MercadoIPN/blob/master/Teaser-M-IPN.gif)
-
+<img src="https://github.com/Exusai/MercadoIPN/blob/master/Teaser-M-IPN.gif"/>
