@@ -105,13 +105,24 @@ class _CuentaState extends State<Cuenta> {
                   },
                 ),
                 FlatButton(
-                  child: Text('Compartir/Actualizar',style: TextStyle(color: Colors.black,fontSize: 18)),
+                  child: Text('Avisos',style: TextStyle(color: Colors.black,fontSize: 18)),
                   //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24),),
                   onPressed: (){
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context)=>MessagePage())
                     );
+                  },
+                ),
+                FlatButton(
+                  child: Text('Actualizar',style: TextStyle(color: Colors.black,fontSize: 18)),
+                  onPressed: ()async{
+                    const url = 'https://exusai.github.io/MercadoIPN/';
+                    if (await canLaunch(url)) {
+                      await launch(url);
+                    } else {
+                      throw 'Could not launch $url';
+                    }
                   },
                 ),
                 //SizedBox(height: 20,),
@@ -169,7 +180,7 @@ Widget _buildAboutDialog(BuildContext context) {
               FlatButton(
                   child: Text('Github',style: TextStyle(color: Colors.black,fontSize: 18)),
                   onPressed: ()async{
-                    const url = 'https://github.com/Skyler911';
+                    const url = 'https://github.com/Exusai';
                     if (await canLaunch(url)) {
                       await launch(url);
                     } else {
@@ -177,17 +188,17 @@ Widget _buildAboutDialog(BuildContext context) {
                     }
                   },
                 ),
-              // FlatButton(
-              //     child: Text('Twitter(?)',style: TextStyle(color: Colors.black,fontSize: 18)),
-              //     onPressed: ()async{
-              //       const url = 'https://twitter.com/fo0rzaken';
-              //       if (await canLaunch(url)) {
-              //         await launch(url);
-              //       } else {
-              //         throw 'Could not launch $url';
-              //       }
-              //     },
-              //   ),
+              FlatButton(
+                  child: Text('Sitio',style: TextStyle(color: Colors.black,fontSize: 18)),
+                  onPressed: ()async{
+                    const url = 'https://exusai.github.io/MercadoIPN/';
+                    if (await canLaunch(url)) {
+                      await launch(url);
+                    } else {
+                      throw 'Could not launch $url';
+                    }
+                  },
+                ),
               
             ],
           ),

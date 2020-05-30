@@ -45,6 +45,13 @@ class _ProductListState extends State<ProductList> {
       }
     });
 
+    List<Product> postres = [];
+    avProds.forEach((prod){
+      if(prod.categoria == 'Postres'){
+          postres.add(prod);
+      }
+    });
+
     List<Product> electronicos = [];
     avProds.forEach((prod){
       if(prod.categoria == 'Electronicos'){
@@ -54,7 +61,7 @@ class _ProductListState extends State<ProductList> {
 
     List<Product> weas = [];
     avProds.forEach((prod){
-      if(prod.categoria == 'Weas'){
+      if(prod.categoria == 'Otros'){
           weas.add(prod);
       }
     });
@@ -108,6 +115,28 @@ class _ProductListState extends State<ProductList> {
         Row(
           children: <Widget>[
             SizedBox(width: 5,),
+            Text('Postres',style: TextStyle(fontSize: 23),),
+          ],
+        ),
+        //SizedBox(height: 10,),
+        Container(
+          height: 150,
+          child: GridView.builder(
+            shrinkWrap: true,
+            scrollDirection: Axis.horizontal,
+            itemCount: postres.length,
+            gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
+            itemBuilder: (context, index) {
+            return ViewProduct(product: postres[index]);
+            },
+          ),
+        ),
+        SizedBox(height: 10,),
+
+
+        Row(
+          children: <Widget>[
+            SizedBox(width: 5,),
             Text('Electronicos',style: TextStyle(fontSize: 23),),
           ],
         ),
@@ -121,6 +150,26 @@ class _ProductListState extends State<ProductList> {
             gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
             itemBuilder: (context, index) {
             return ViewProduct(product: electronicos[index]);
+            },
+          ),
+        ),
+        SizedBox(height: 10,),
+        Row(
+          children: <Widget>[
+            SizedBox(width: 5,),
+            Text('Otros',style: TextStyle(fontSize: 23),),
+          ],
+        ),
+        //SizedBox(height: 10,),
+        Container(
+          height: 150,
+          child: GridView.builder(
+            shrinkWrap: true,
+            scrollDirection: Axis.horizontal,
+            itemCount: weas.length,
+            gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
+            itemBuilder: (context, index) {
+            return ViewProduct(product: weas[index]);
             },
           ),
         ),

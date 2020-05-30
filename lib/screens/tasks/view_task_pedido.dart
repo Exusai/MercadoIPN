@@ -41,8 +41,9 @@ class TaskCard extends StatelessWidget {
           padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
           child: ListTile(
               title: Text('Llevar ' + task.producto + ' a ' + task.comprador),
-              subtitle: Text('///'+task.status+'///'+' ---'+ task.fecha.substring(8,10)+'/'+task.fecha.substring(5,7) + ' a las ' +task.fecha.substring(11,13)+':'+task.fecha.substring(14) + '--- '+'Llevar a: '+ task.punto,
-              style: TextStyle(color: task.status == 'Entregado'? Colors.greenAccent: Colors.grey)),
+              subtitle: Text('///'+task.status+'///'+' ---'+ task.fecha.substring(8,10)+'/'+task.fecha.substring(5,7) + ' a las ' +task.fecha.substring(11,13)+':'+task.fecha.substring(14) + '--- '+'Llevar a: '+task.punto.toString(),
+              style: TextStyle(color: task.status == 'Entregado'? Colors.greenAccent: Colors.grey)
+              ),
               trailing: Icon(Icons.more_vert),
               isThreeLine: true,
               selected: task.status == 'En camino' ? true : false,
@@ -100,9 +101,9 @@ Widget statusTask(BuildContext context, Task task) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text('Precio: ' + '\$' + task.costo),
-            Text('Comprador: ' + task.vendedor),
+            Text('Comprador: ' + task.comprador),
             Text(task.fecha.substring(8,10)+'/'+task.fecha.substring(5,7)+'/'+task.fecha.substring(0,4) + ' a las ' +task.fecha.substring(11,13)+':'+task.fecha.substring(14),),
-            Text('Entregar en: '+task.punto),
+            Text('Entregar en: '+task.punto.toString()),
             Text('Status: '+task.status),
           ],
         ),

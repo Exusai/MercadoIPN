@@ -20,7 +20,7 @@ class _VenderState extends State<Vender> {
   //final AuthService _auth = AuthService();
   //final user = Provider.of<User>();
   final _formkey = GlobalKey<FormState>();
-  final List<String> categories = ['Comida','Dulces','Electronicos','Weas'];
+  final List<String> categories = ['Comida','Dulces','Postres','Electronicos','Otros'];
   String productImage;
   String nombre;
   String descrip;

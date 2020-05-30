@@ -42,12 +42,6 @@ class _ListaPedidosState extends State<ListaPedidos> {
         }
       }
     });
-
-
-
-    //tasks = task;
-    //separar cada if :v 
-    //para poder añadir items en orden :y
     
     task.forEach((tarea){
       if(tarea.status == 'Pendiente'){
@@ -63,7 +57,6 @@ class _ListaPedidosState extends State<ListaPedidos> {
         if (tasks.length < 5){
           tasks.add(tar);
         }
-          
       }
       if(tar.status == 'Entregado'){
         if (tasks.length < 5){
@@ -75,8 +68,8 @@ class _ListaPedidosState extends State<ListaPedidos> {
     List<Widget> pages = [
     pedidoW(pedidos),
     taskW(tasks),
-    
   ];
+
     return DefaultTabController(
       length: 2,
       initialIndex: 0,

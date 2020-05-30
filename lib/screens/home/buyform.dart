@@ -20,10 +20,14 @@ class _BuyFormState extends State<BuyForm> {
   final _formkey = GlobalKey<FormState>();
   String loc;
   _BuyFormState({this.product});
+  String msg='';
 
   @override
   Widget build(BuildContext context) {
     final user = Provider.of<User>(context);
+    if(product.propietario == user.uid){
+      msg = 'Por la integridad de mi base de datos, no debes comprarte tus productos';
+    }
     return loading ? Loading(): Scaffold(
       backgroundColor: Color(0xffF2F2F2),
               appBar: AppBar(
@@ -90,6 +94,7 @@ class _BuyFormState extends State<BuyForm> {
               ),
               FlatButton(
                         onPressed: ()async{
+                          if (_formkey.currentState.validate()){
                         setState(() => loading = true);
                         String now = formatDate(new DateTime.now(), [yyyy, '-', mm, '-', dd, '-',hh, '-',mm]);
                         String comp = await DatabaseService().usrData(user.uid);
@@ -105,6 +110,7 @@ class _BuyFormState extends State<BuyForm> {
                                 context,
                                 MaterialPageRoute(builder: (context)=>TaskStatus())
                               );
+                          }
                         },
                         padding: EdgeInsets.all(0),
                         child: Container(
@@ -118,9 +124,13 @@ class _BuyFormState extends State<BuyForm> {
                               ),
                             ),
                       ),
+                      
             ],
           ),
+          SizedBox(height: 20,),
+          Text(msg,style: TextStyle(color: Colors.red),textAlign: TextAlign.center,)
         ],
+        
       ),
     );
   }
